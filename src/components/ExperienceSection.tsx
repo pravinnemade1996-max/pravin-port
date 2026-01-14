@@ -8,7 +8,7 @@ const experiences = [
     title: "Programmer Analyst + Associate",
     company: "Cognizant Technology Solutions",
     location: "India",
-    period: "Oct 2022 – Nov 2024",
+    period: "Oct 2021 – Nov 2024",
     description: [
       "Analyzed input data and performed data cleansing including null checks, duplicate removal, and validation",
       "Performed various transformations and metadata casting using custom-built schemas",
