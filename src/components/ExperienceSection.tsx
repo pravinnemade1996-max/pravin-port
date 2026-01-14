@@ -20,7 +20,7 @@ const experiences = [
     title: "Data Analyst",
     company: "Accenture",
     location: "India",
-    period: "Nov 2024 – Jan 2025",
+    period: "Nov 2024 – Jan 2026",
     description: [
       "Developed and optimized distributed data pipelines using PySpark to process and transform large-scale financial datasets",
       "Deployed and managed Spark jobs on AWS EMR clusters for high-performance data processing",
