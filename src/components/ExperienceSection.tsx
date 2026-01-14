@@ -5,6 +5,18 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
+    title: "Programmer Analyst + Associate",
+    company: "Cognizant Technology Solutions",
+    location: "India",
+    period: "Oct 2022 – Nov 2024",
+    description: [
+      "Analyzed input data and performed data cleansing including null checks, duplicate removal, and validation",
+      "Performed various transformations and metadata casting using custom-built schemas",
+      "Worked on data extraction using complex SQL queries including joins, subqueries, and set operators",
+      "Improved query performance through indexing, views optimization, and CTE-based simplification",
+    ],
+  },
+  {
     title: "Data Analyst",
     company: "Accenture",
     location: "India",
@@ -14,30 +26,10 @@ const experiences = [
       "Deployed and managed Spark jobs on AWS EMR clusters for high-performance data processing",
       "Integrated AWS S3 for reading/writing intermediate and final datasets in Parquet/CSV formats",
       "Performed data validation using complex SQL queries with various clauses, grouping functions, and window functions",
-    ],
-  },
-  {
-    title: "Associate",
-    company: "Cognizant Technology Solutions",
-    location: "India",
-    period: "Jan 2024 – Nov 2024",
-    description: [
       "Designed and implemented REST APIs using AWS API Gateway with POST methods for secure client request handling",
       "Developed and deployed AWS Lambda functions to process API requests with event-driven triggers",
       "Integrated AWS Lambda with API Gateway and Amazon S3 for automated data processing workflows",
       "Built and maintained AWS Glue PySpark scripts for scalable ETL operations on large datasets",
-    ],
-  },
-  {
-    title: "Programmer Analyst",
-    company: "Cognizant Technology Solutions",
-    location: "India",
-    period: "Oct 2022 – Dec 2023",
-    description: [
-      "Analyzed input data and performed data cleansing including null checks, duplicate removal, and validation",
-      "Performed various transformations and metadata casting using custom-built schemas",
-      "Worked on data extraction using complex SQL queries including joins, subqueries, and set operators",
-      "Improved query performance through indexing, views optimization, and CTE-based simplification",
     ],
   },
 ];
@@ -72,17 +64,15 @@ export const ExperienceSection = () => {
                 initial={{ opacity: 0, y: 40 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className={`relative flex flex-col md:flex-row gap-8 ${
-                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                }`}
+                className={`relative flex flex-col md:flex-row gap-8 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                  }`}
               >
                 {/* Timeline dot */}
                 <div className="timeline-dot z-10" />
 
                 {/* Content card */}
-                <div className={`ml-12 md:ml-0 md:w-1/2 ${
-                  index % 2 === 0 ? "md:pr-12" : "md:pl-12"
-                }`}>
+                <div className={`ml-12 md:ml-0 md:w-1/2 ${index % 2 === 0 ? "md:pr-12" : "md:pl-12"
+                  }`}>
                   <motion.div
                     whileHover={{ y: -4 }}
                     className="bg-background rounded-2xl p-6 border border-border shadow-card hover:shadow-elevated transition-all duration-300"
